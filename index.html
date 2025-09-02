@@ -1296,6 +1296,14 @@
 			});
 		});
 	</script>
+
+	<!-- Closes the Responsive Menu on Menu Item Click -->
+	<script>
+		$(document).ready(function(){
+		$('.navbar-collapse a').on('click', function(){
+		if ($(window).width() < 768) { $('.navbar-collapse').collapse('hide'); } }); });
+	</script>
+
 </body>
 
 </html>
